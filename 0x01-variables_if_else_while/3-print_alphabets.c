@@ -18,7 +18,7 @@ int main(void)
 		putchar(str[i]);
 		i++;
 	}
-	i=0;
+	i = 0;
 	while (str[i] != '\0')
 	{
 		str[i] = str[i] - 32;
