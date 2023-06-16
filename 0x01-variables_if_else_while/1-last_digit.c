@@ -10,7 +10,7 @@
  * than 5, or less than 6 and not 0, or
  * equal 0
  *
- * return: Return 0 (successful)
+ * Return: return 0 (successful)
 */
 
 int main(void)
