@@ -12,7 +12,6 @@ int main(void)
 {
 	char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
-	
 
 	while (str[i] != '\0')
 	{
