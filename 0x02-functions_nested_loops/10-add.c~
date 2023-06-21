@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * add - entry point
+ *
+ * Description:  add two numbers
+ *
+ * Return: result of adding two num
+ *
+*/
+
+int add(int a, int b)
+{
+	return (a + b);
+}
