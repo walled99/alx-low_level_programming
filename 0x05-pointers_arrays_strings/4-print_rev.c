@@ -13,8 +13,8 @@ void print_rev(char *s)
 {
 	int i, j;
 
-	for (i = 0; *(str + i); i++)
+	for (i = 0; *(s + i); i++)
 		continue;
-	for (j = i - 1; *(str + j); j--)
-		_putchar(*(str + j));
+	for (j = i - 1; *(s + j); j--)
+		_putchar(*(s + j));
 }
