@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * _stract - entry point
+ * _strcat - concatenate strings
  *
- * Description: concatenate Strings
+ * Description: concatenate Strings together
+ *
  * @dest: pointer points to String destination
  * @src: Pointer points to String source
  *
  * Return: pointer points to array of char
-*/
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -20,7 +21,7 @@ char *_strcat(char *dest, char *src)
 		dest_len++;
 	while (src_len != '\0')
 		src_len++;
-	for (i = 0; i <= src_len; i++)
+	for (i = 0; i < src_len; i++)
 		dest[dest_len + i] = src[i];
 
 	return (dest);
