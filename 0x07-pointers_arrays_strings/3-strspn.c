@@ -1,6 +1,14 @@
 #include "main.h"
 
-/***/
+/**
+ * _strspn - Entry point of func
+ *
+ * Description: find matching String
+ * @s: pointer to string
+ * @accept: pointer to string
+ *
+ * Return: integer value
+*/
 
 unsigned int _strspn(char *s, char *accept)
 {
