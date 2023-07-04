@@ -24,6 +24,6 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	found = &s[i];
+	found = NULL;
 	return (found);
 }
