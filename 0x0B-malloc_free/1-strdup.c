@@ -1,9 +1,9 @@
 #include "main.h"
-#include <stdlib.h>
+11;rgb:0000/0000/0000#include <stdlib.h>
 
 /**
- * *_strdup: Entry point
- * short description: pointer
+ * _strdup - Entry point
+ *
  * Description: copy String to another.
  * @str: pointer to chars
  *
