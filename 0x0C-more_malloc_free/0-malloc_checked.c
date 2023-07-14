@@ -6,7 +6,7 @@
  *
  * @b: unsigned Integer
  *
- * Return: pointer 
+ * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
