@@ -1,5 +1,5 @@
 #ifndef MY_STRUCT_H
-11;rgb:0000/0000/0000#define MY_STRUCT_H
+#define MY_STRUCT_H
 
 /**
  * struct dog - entry point
