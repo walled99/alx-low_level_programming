@@ -1,0 +1,14 @@
+/**
+ * struct dog - entry point
+ * @name: pointer char
+ * @age: pointer float
+ * @owner: pointer char
+ * Description: declare dog struct
+*/
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+}
