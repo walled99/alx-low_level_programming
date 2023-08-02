@@ -1,5 +1,5 @@
 #include "lists.h"
-
+11;rgb:0000/0000/0000
 /**
  * free_listint2 - Entry point
  * Description: free list
@@ -15,7 +15,7 @@ void free_listint2(listint_t **head)
 	{
 		ptr = (*head)->next;
 		free(*head);
-		head = ptr;
+		*head = ptr;
 	}
 	head = NULL;
 }
