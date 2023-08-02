@@ -1,5 +1,5 @@
 #include "lists.h"
-
+11;rgb:0000/0000/0000
 /**
  * get_nodeint_at_index - entry point
  * Description: index node
@@ -10,13 +10,19 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int i;
+	unsigned int i;
+	listint_t *ptr;
 
+	ptr = head;
 	if (index < 0)
 		return (NULL);
 	for (i = 0; i < index; i++)
 	{
-		head = head->next;
+		if (ptr == NULL)
+			return (NULL);
+		ptr = ptr->next;
 	}
-	return (head);
+	if (ptr == NULL)
+		return (NULL);
+	return (ptr);
 }
