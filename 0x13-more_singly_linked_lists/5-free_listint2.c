@@ -1,5 +1,5 @@
 #include "lists.h"
-11;rgb:0000/0000/000011;rgb:0000/0000/0000
+
 /**
  * free_listint2 - Entry point
  * Description: free list
