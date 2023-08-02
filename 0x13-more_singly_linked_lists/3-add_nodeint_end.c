@@ -2,22 +2,36 @@
 
 /**
  * add_nodeint_end - Entry point
- * Description: add at the end
- * @head: double pointter
- * @n: integer
- * Return: address of new node
+ * Description: add node to tail of list
+ * @head: pointer to list
+ * @n: integer for new node
+ *
+ * Return: pointer to new node or NULL
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new;
+	listint_t *temp;
 
+	temp = *head;
 	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+	if (!new)
 		return (NULL);
+
 	new->n = n;
 	new->next = NULL;
-	while ((*head)->next != NULL)
-		*head = (*head)->next;
-	(*head)->next = new;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		return (new);
+	}
+
+	while (temp->next)
+		temp = temp->next;
+
+	temp->next = new;
+
+	return (new);
 }
