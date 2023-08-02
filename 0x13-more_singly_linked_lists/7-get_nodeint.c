@@ -1,5 +1,5 @@
 #include "lists.h"
-11;rgb:0000/0000/0000
+
 /**
  * get_nodeint_at_index - entry point
  * Description: index node
