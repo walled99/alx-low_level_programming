@@ -21,8 +21,13 @@ int append_text_to_file(const char *filename, char *text_content)
 	while (*text_content++)
 		len++;
 	fileo = open(filename, O_WRONLY | O_APPEND);
-	filew = write(fileo, text_content, len);
-	if (filew < 0 || fileo < 0)
+	if (text_content != NULL)
+	{
+		filew = write(fileo, text_content, len);
+		if (filew < 0)
+			return (-1);
+	}
+	if (fileo < 0)
 		return (-1);
 	return (1);
 	close(fileo);
