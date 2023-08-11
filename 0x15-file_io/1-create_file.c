@@ -25,10 +25,6 @@ int create_file(const char *filename, char *text_content)
 	if (f_d < 0)
 		return (-1);
 	test = write(f_d, text_content, length);
-	if (test == length)
-		return (1);
-	else
-		return (-1);
 	close(f_d);
 	return (1);
 }
