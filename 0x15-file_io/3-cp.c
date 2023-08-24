@@ -8,7 +8,7 @@
  *
  * Return: A pointer to bufferr
  */
-char *buffer(char *file)
+char *cr_buffer(char *file)
 {
 	char *buf;
 
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buffer = buffer(argv[2]);
+	buffer = cr_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
